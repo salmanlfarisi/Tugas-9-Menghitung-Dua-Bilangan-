@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Dollar</title>
+</head>
+<body>
+    <h2>Rupiah To Dollar</h2>
+    <label for="rupiah">Rupiah</label>
+    <input type="number" id="rupiah">
+    <br>
+    <span id="hasil2"></span>
+    <br>
+    <button type="button" onclick="hitung_rupiah()">Hitung</button>
+
+    <script>
+        function hitung_dolar(){
+            let rp = 14650;
+            let d = document.getElementById("dolar").value
+            let h = d*rp;
+            document.getElementById("hasil").innerHTML = "hasil = Rp. " + h;
+        }
+
+        function hitung_rupiah(){
+            let rp2 = document.getElementById("rupiah").value;
+            let h = rp2*(1/14650);
+            document.getElementById("hasil2").innerHTML = "Dollar = $" + h;
+        }
+    </script>
+</body>
+</html>
